@@ -1,0 +1,412 @@
+#menu{
+    .boxes{
+        width: 25%;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+            box-shadow: 5px 8px 14px grey;
+
+        }
+
+        .photo{
+                position: relative;
+                &::before{
+                    content: "Dessert";
+                    top: 90%;
+                    left: 35%;
+                    background-color: black;
+                    color: white;
+                    position: absolute;
+                    padding: 5px 15px;
+                    font-size: 15px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                }
+
+            img{
+                width: 100%;
+
+            }
+        }
+        .phototext{
+            margin: auto;
+            width: 80%;
+            a{
+                text-decoration: none;
+            }
+            h3{
+                font-size: 20px;
+                color: rgb(110, 107, 107);
+                font-weight: 500;
+                margin-top: 35px;
+            }
+            p{
+                color: grey;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+#week{
+    .boxes1{
+        margin-right: 5%;
+        .clock{
+            h1{
+                font-size: 20px;
+                color: #606060;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 15px;
+                color: grey;
+                font-weight: 500;
+            }
+            h3{
+                color: grey;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            h4{
+                color: #606060;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+
+    }
+    .boxes2{
+        p{
+            color:grey;
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+            color: #606060;
+        }
+        a{
+            text-decoration: none;
+            color: aqua;
+            border: 1px solid aqua;
+            padding: 5px 10px;
+            margin-top: 20px;
+            display: inline-block;
+            padding-left: 20px;
+            position: relative;
+            &:hover{
+                &::before{
+                    height: 100%;
+                    transition: 0.5s ease-in-out;
+
+                }
+            }
+            &::before{
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0%;
+                position: absolute;
+                background-color: aqua;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+
+
+
+
+// font-family: 'Libre Baskerville',
+// serif;
+// font-family: 'Montserrat',
+// sans-serif;
+// 484848
+
+
+
+
+#burgers {
+    background-image: url(http://templates.framework-y.com/gourmet/images/bg-17.jpg);
+    background-position: center center;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+
+    .top {
+        padding-top: 100px;
+
+        .left {
+            width: 33.33%;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        .middle {
+            width: 33.33%;
+
+            .top {
+                font-family: 'Libre Baskerville', serif;
+                font-weight: 400;
+                font-style: italic;
+                color: #8F8F8F;
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.3rem;
+                font-weight: 600;
+                color: #484848;
+
+
+            }
+
+            .bottom {
+                padding: 20px 0;
+
+                .text {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.8rem;
+                    color: #484848;
+                    font-weight: 700;
+                    position: relative;
+
+                    &::after {
+                        content: '75%';
+                        position: absolute;
+                        color: #484848;
+                        width: 40px;
+                        height: 40px;
+                        right: 30%;
+                        padding: 0;
+                        margin: 0;
+                        top: 0;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .line {
+                    width: 400px;
+                    height: 5px;
+                    background-color: #E8E8E8;
+                    margin: 10px 0 20px 0;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-color: #484848;
+                        width: 70%;
+                        height: 5px;
+                        top: 0;
+                        left: 0;
+
+                    }
+
+
+                }
+            }
+
+        }
+
+        .right {
+            width: 33.33%;
+
+            p {
+                font-family: 'Libre Baskerville', serif;
+                font-weight: 300;
+                color: #838383;
+                line-height: 25px;
+                font-size: 0.9rem;
+                width: 86%;
+            }
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2rem;
+                font-weight: 600;
+                color: #484848;
+            }
+        }
+    }
+}
+
+
+
+#themenu{
+    background-image: url(https://templates.framework-y.com/gourmet/images/bg-19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+
+    .head{
+        text-align: center;
+        
+        p{
+            color: #4848485a;
+            font-style: italic;
+            font-weight: bold;
+            font-family: apple;
+        }
+
+        h1{
+            color: #484848f9;
+        }
+    }
+
+    .onewood{
+        padding-top: 30px;
+        justify-content: space-around;
+        .wod{
+            width: 150px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            p{
+                width: 300px;
+                color: #4848485a;
+                font-size:15px;
+            }
+            h3{
+                font-size: 15px;
+                color: #484848ac;
+            }
+        }
+        
+    }
+}
+
+
+#profil{
+    background-color: #F7F7F7;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    .phot{
+        .xob1{
+            background-color: #fff;
+            font-size: 15px;
+            padding: 30px;
+            color: #484848ae;
+        }
+        .imgtxt{
+          display: flex;
+          align-items: center;
+            img{
+                width: 100px;
+                border-radius: 50%;
+                padding: 10px;
+            }
+        }
+    }
+
+        
+}
+
+
+
+
+
+#allpot{
+    width: 100%;
+    display: flex;
+    img{
+       width: 17%;
+        
+    }
+}
+
+
+
+footer{
+
+    margin-top: 30px;
+    p{
+        color: #C7B5B3;
+    }
+    .fotbox{
+        
+        text-align: center;
+        p{
+         padding: 20px;
+         font-size: 15px;
+        }
+    }
+
+   
+    ul{
+  
+     list-style: none;
+      display: flex;
+      justify-content: center;
+        li{
+            
+            .one{
+                color: #B3B3B3;
+               display: inline-block;
+                padding: 25px 20px;
+                transition: 0.4s;
+                &:hover{
+                    color: #fff;
+                    background-color: #3B5998;
+                }
+               }
+            .two{
+                color: #B3B3B3;
+                display: inline-block;
+                 padding: 25px 20px;
+                 transition: 0.4s;
+                 &:hover{
+                     color: #fff;
+                     background-color:#3B8ACA;
+                 }
+            }
+           
+            .three{
+                color: #B3B3B3;
+                display: inline-block;
+                 padding: 25px 20px;
+                 transition: 0.4s;
+                 &:hover{
+                     color: #fff;
+                     background-color:#464646;
+                 }
+            }
+
+            .four{
+                color: #B3B3B3;
+                display: inline-block;
+                 padding: 25px 20px;
+                 transition: 0.4s;
+                 &:hover{
+                     color: #fff;
+                     background-color:#CC181E;
+                 }
+            }
+
+        }
+    
+       }
+   
+   .fin{
+    text-align: center;
+   color: #C7B5B3;
+   }
+  
+}
